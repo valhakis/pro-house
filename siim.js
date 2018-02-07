@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 THREE=require("three");
 			//if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 			var container, stats, clock;
@@ -55,3 +56,7 @@ THREE=require("three");
 				renderer.render( scene, camera );
 			}
 
+=======
+// require('./create');
+require('./model');
+>>>>>>> 6d4762bb4fb4911abc8d6122b0954b2e57623f8a
