@@ -2,10 +2,12 @@ require('../globals');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  context: __dirname,
   devtool: 'eval',
   entry: './src/index.js',
   output: {
-    filename: "./dist/[name].bundle.js"
+    path: __dirname + '/' + 'dist',
+    filename: "[name].bundle.js"
   },
   module: {
     rules: [{
@@ -27,12 +29,12 @@ module.exports = {
     }]
   },
   devServer: {
-    compress: true,
+    contentBase: __dirname + '/dist',
+    // compress: true,
     host: '0.0.0.0',
     port: 8000
   },
   resolve: {
-    // modules: [__root + 'node_modules', __root + 'lib'],
     modules: [__root + 'node_modules', __dirname + '/' + 'node_modules'],
     alias: { 
       vue: 'vue/dist/vue.js',
