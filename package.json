@@ -13,6 +13,9 @@
   "dependencies": {
     "html-webpack-plugin": "^2.30.1",
     "three": "^0.89.0",
+    "three-collada-loader": "0.0.1",
+    "three-loaders-collada": "^1.0.1",
+    "three-stats": "^1.0.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   }
