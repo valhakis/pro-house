@@ -1,4 +1,3 @@
-require('../globals');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -35,12 +34,8 @@ module.exports = {
     port: 8000
   },
   resolve: {
-    modules: [__root + 'node_modules', __dirname + '/' + 'node_modules'],
+    modules: [__dirname + '/' + 'node_modules'],
     alias: { 
-      vue: 'vue/dist/vue.js',
-      motizium: __root + 'motizium/client.js',
-      'modules': __base + 'modules',
-      api: __root + 'modules/api.js'
     }
   },
   plugins: [new HtmlWebpackPlugin()]
